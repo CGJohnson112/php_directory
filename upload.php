@@ -1,5 +1,7 @@
 <?php
-$name = $_POST['name'];
+//upload directory to 'file/' folder
+$name = "file/". $_POST['name'];
+
 
 if(isset($_POST['submit'])) {
 	mkdir($name);
@@ -7,4 +9,11 @@ if(isset($_POST['submit'])) {
   }
   header('location: index.php');
   exit();
+
+//select directory to view
+
+
+
+ 
 ?>
+
